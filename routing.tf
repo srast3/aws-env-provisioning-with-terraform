@@ -1,7 +1,7 @@
 # Declare the data source
 data "aws_availability_zones" "available" {}
 
-/* EXTERNAL NETWORG , IG, ROUTE TABLE */
+/* EXTERNAL NETWORK , IG, ROUTE TABLE */
 resource "aws_internet_gateway" "gw" {
    vpc_id = "${aws_vpc.terraformmain.id}"
     tags {
